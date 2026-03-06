@@ -1,15 +1,15 @@
 # Campus Ideas 
 
-Campus Ideas est une application Angular moderne permettant aux �tudiants et au personnel de proposer, consulter et g�rer des suggestions d'am�lioration pour la vie de campus.
+Campus Ideas est une application Angular moderne permettant aux étudiants et au personnel de proposer, consulter et gérer des suggestions d'amélioration pour la vie de campus.
 
-##  Fonctionnalit�s
+##  Fonctionnalités
 
 - ** Liste des suggestions** : Consultation de toutes les propositions avec leur statut.
-- ** Recherche dynamique** : Filtrage en temps r�el par titre ou cat�gorie.
-- ** Syst�me de Likes** : Soutenez les meilleures id�es en un clic.
-- ** Favoris** : Enregistrez vos suggestions pr�f�r�es pour les retrouver facilement.
-- ** Statuts visuels** : Suivi clair des propositions (Accept�e , En attente , Refus�e ).
-- ** Logique m�tier** : Les actions (Like/Favoris) sont d�sactiv�es pour les suggestions refus�es.
+- ** Recherche dynamique** : Filtrage en temps réel par titre ou catégorie.
+- ** Systéme de Likes** : Soutenez les meilleures idées en un clic.
+- ** Favoris** : Enregistrez vos suggestions préférées pour les retrouver facilement.
+- ** Statuts visuels** : Suivi clair des propositions (Acceptée , En attente , Refusée ).
+- ** Logique métier** : Les actions (Like/Favoris) sont désactivées pour les suggestions refusées.
 
 ##  Stack Technique
 
@@ -26,12 +26,12 @@ Campus Ideas est une application Angular moderne permettant aux �tudiants et a
    cd Campus-Ideas
    ```
 
-2. **Installer les d�pendances**
+2. **Installer les dépendances**
    ```bash
    npm install
    ```
 
-3. **Lancer le serveur de d�veloppement**
+3. **Lancer le serveur de développement**
    ```bash
    npm start
    ```
@@ -39,8 +39,8 @@ Campus Ideas est une application Angular moderne permettant aux �tudiants et a
 
 ##  Structure du projet
 
-- `src/app/core/header` : Barre de navigation sup�rieure.
-- `src/app/core/footer` : Pied de page stylis�.
-- `src/app/core/list-suggestion` : Composant principal g�rant l'affichage et la logique des suggestions.
-- `src/app/models/suggestion.ts` : Interface d�finissant la structure de donn�es.
+- `src/app/core/header` : Barre de navigation supérieure.
+- `src/app/core/footer` : Pied de page stylisé.
+- `src/app/core/list-suggestion` : Composant principal gérant l'affichage et la logique des suggestions.
+- `src/app/models/suggestion.ts` : Interface définissant la structure de données.
 
