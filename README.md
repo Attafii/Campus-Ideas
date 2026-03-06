@@ -1,59 +1,46 @@
-# CampusIdeas
+# Campus Ideas 
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.1.
+Campus Ideas est une application Angular moderne permettant aux �tudiants et au personnel de proposer, consulter et g�rer des suggestions d'am�lioration pour la vie de campus.
 
-## Development server
+##  Fonctionnalit�s
 
-To start a local development server, run:
+- ** Liste des suggestions** : Consultation de toutes les propositions avec leur statut.
+- ** Recherche dynamique** : Filtrage en temps r�el par titre ou cat�gorie.
+- ** Syst�me de Likes** : Soutenez les meilleures id�es en un clic.
+- ** Favoris** : Enregistrez vos suggestions pr�f�r�es pour les retrouver facilement.
+- ** Statuts visuels** : Suivi clair des propositions (Accept�e , En attente , Refus�e ).
+- ** Logique m�tier** : Les actions (Like/Favoris) sont d�sactiv�es pour les suggestions refus�es.
 
-```bash
-ng serve
-```
+##  Stack Technique
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Framework** : Angular v19+
+- **Langage** : TypeScript
+- **Style** : CSS3 (Design moderne et responsive)
+- **Data Binding** : Utilisation intensive de l'Interpolation, Property Binding, Event Binding et Two-way Binding.
 
-## Code scaffolding
+##  Installation et Lancement
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. **Cloner le projet**
+   ```bash
+   git clone https://github.com/Attafii/Campus-Ideas.git
+   cd Campus-Ideas
+   ```
 
-```bash
-ng generate component component-name
-```
+2. **Installer les d�pendances**
+   ```bash
+   npm install
+   ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+3. **Lancer le serveur de d�veloppement**
+   ```bash
+   npm start
+   ```
+   Rendez-vous sur `http://localhost:4200/`.
 
-```bash
-ng generate --help
-```
+##  Structure du projet
 
-## Building
+- `src/app/core/header` : Barre de navigation sup�rieure.
+- `src/app/core/footer` : Pied de page stylis�.
+- `src/app/core/list-suggestion` : Composant principal g�rant l'affichage et la logique des suggestions.
+- `src/app/models/suggestion.ts` : Interface d�finissant la structure de donn�es.
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
