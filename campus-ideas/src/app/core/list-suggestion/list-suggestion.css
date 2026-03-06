@@ -1,0 +1,146 @@
+.main-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.search-section {
+  margin-bottom: 40px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.suggestions-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.suggestion-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card-title {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  color: #2c3e50;
+}
+
+.card-meta {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.category {
+  color: #007bff;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.date {
+  color: #888;
+}
+
+.description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.status-badge.acceptee {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.refusee {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status-badge.en_attente {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.card-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.like-btn, .fav-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #eee;
+  transition: all 0.2s;
+}
+
+.like-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.like-btn:hover {
+  background-color: #0056b3;
+}
+
+.fav-btn {
+  background-color: #fff;
+  color: #333;
+}
+
+.fav-btn:hover {
+  background-color: #f8f9fa;
+  border-color: #ccc;
+}
+
+.favorites-section {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 2px solid #eee;
+}
+
+.fav-item {
+  display: inline-block;
+  background: #e9ecef;
+  margin: 5px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+}

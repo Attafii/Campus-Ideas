@@ -1,0 +1,47 @@
+<div class="main-container">
+  <h1 class="page-title">Liste des suggestions</h1>
+
+  <div class="search-section">
+    <input
+      type="text"
+      [(ngModel)]="searchTerm"
+      placeholder="Rechercher une suggestion"
+      class="search-input"
+    />
+  </div>
+
+  <div class="suggestions-grid">
+    <div *ngFor="let s of filteredSuggestions" class="suggestion-card">
+      <div class="card-header">
+        <h2 class="card-title">{{ s.title }}</h2>
+      </div>
+      <div class="card-meta">
+        <span class="category">{{ s.category }}</span>
+        <span class="date">{{ s.date | date : 'dd MMM yyyy' }}</span>
+      </div>
+      <p class="description">{{ s.description }}</p>
+
+      <div class="status-badge" [ngClass]="s.status">
+        {{ s.status | uppercase }}
+      </div>
+
+      <div *ngIf="s.status !== 'refusee'" class="card-actions">
+        <button (click)="like(s)" class="like-btn">
+          <span class="icon">👍</span> Like {{ s.nbLikes }}
+        </button>
+        <button (click)="addToFavorites(s)" class="fav-btn">
+          <span class="icon">♡</span> Ajouter aux favoris
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Favoris (optionnelle, selon si l'image la montre ou pas, mais gardée pour la fonctionnalité) -->
+  <div *ngIf="favoris.length > 0" class="favorites-section">
+    <h3>Mes Favoris ({{ favoris.length }})</h3>
+    <div class="fav-list">
+      <span *ngFor="let fav of favoris" class="fav-item">{{ fav.title }}</span>
+    </div>
+  </div>
+</div>
+
